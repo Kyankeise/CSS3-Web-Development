@@ -1,0 +1,85 @@
+
+/* A <div> section in a document that is styled with CSS: */
+
+/* The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name. */
+
+/* The <ul> HTML element represents an unordered list of items, typically rendered as a bulleted list */
+
+/* The <li> HTML element is used to represent an item in a list. It must be contained in a parent element: an ordered list ( <ol> ), an unordered list ( <ul> ), or a menu ( <menu> ). In menus and unordered lists, list items are usually displayed using bullet points. */
+
+/* The <a> tag defines a hyperlink, which is used to link from one page to another.*/
+
+/* * - CSS Univeral selector can be used to select all types of elements in a HTML page */
+
+/* pixels/ px - define unit of absolute length */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+
+/* display - defines the element as a grid container and establishes a new grid formatting context for its containers */
+
+    display: grid;
+
+/* inline-grid - other option - generates an inline-level grid */
+
+/* grid-template - specifies named grid areas */
+
+    grid-template-areas: 
+    'header header header'
+    'nav content sidebar'
+    'nav footer footer'
+    ;
+    
+
+/* Sets the width/ length of each areas column/ row  */
+
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 80px 1fr 70px;
+}
+
+/* Properties for each named grid areas */
+
+header,
+footer,
+main,
+aside,
+nav {
+    background-color: steelblue;
+    color: #fff;
+    padding: 20px;
+    border: skyblue 1px solid;
+}
+
+ /* References the grid areas */
+
+header {
+
+   
+
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+
+}
+
+main{
+    grid-area: content;
+}
+
+aside{
+    grid-area: sidebar;
+}
+
+footer{
+    grid-area: footer;
+}
