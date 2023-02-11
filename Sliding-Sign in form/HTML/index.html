@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<!-- Author: Kyan Keise -->
+<!-- Date: 26/04/2022 -->
+<!-- Title: Sliding Sign in & Sign up form   -->
+
+<!-- ..........................SHORTCUTS.......................................... -->
+
+<!-- Comment line -->
+
+<!-- # is alt + 3 -->
+
+<!-- Shortcut cmd + d = replace all -->
+
+<!-- Shortcut ex. section. creates new class/tag -->
+
+<!-- Shortcut ex. .div creates new div -->
+
+<!-- Comment shortcut cmd + / -->
+
+<!-- Source shortcut script + : -->
+
+<!-- Paste short cut shift + alt + down -->
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Fontawesome Kit Code -->
+
+<script src="https://kit.fontawesome.com/ad546c2219.js" crossorigin="anonymous"></script>
+
+<!--My Custom CSS style sheet -->
+
+<link rel="stylesheet" href="css/style.css"/>
+
+<title>Sign in form/Sign up form</title>
+</head>
+
+ <!-- Main body-->
+
+<body>
+
+<!-- Form Sign up container -->
+
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your email for registration</span>
+			<input type="text" placeholder="Name" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<button>Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your account</span>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<a href="#">Forgot your password?</a>
+			<button>Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Footer -->
+
+<footer class=""></footer>
+
+<!-- JavaScript file -->
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
