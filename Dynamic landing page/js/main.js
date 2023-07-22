@@ -1,3 +1,7 @@
+<!-- Author: Kyan Keise -->
+<!-- Date: 07/04/2022 -->
+<!-- title: Dynamic Landing Page -->
+
 // DOM Elements
 const time= document.getElementById('time'),
 greeting = document.getElementById('greeting'),
