@@ -1,6 +1,6 @@
-<!-- Author: Kyan Keise -->
-<!-- Date: 29/04/2022 -->
-<!-- Title: Mobile First Website  -->
+// Author: Kyan Keise 
+// Date: 25/03/2022 
+// Title: Mobile First Website 
 
 // Animate smooth scroll
 
