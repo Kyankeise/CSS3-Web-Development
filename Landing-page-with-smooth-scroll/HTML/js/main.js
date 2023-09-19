@@ -1,6 +1,6 @@
-<!-- Author: Kyan Keise -->
-<!-- Date: 03/05/22 -->
-<!-- Title: Landing page with smooth scroll  -->
+// Author: Kyan Keise 
+//  Date: 03/05/22
+// Title: Landing page with smooth scroll 
 
 // option 2 - jquery smooth scroll
 
