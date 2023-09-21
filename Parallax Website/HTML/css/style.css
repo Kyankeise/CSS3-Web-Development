@@ -1,6 +1,8 @@
-<!-- Author: Kyan Keise -->
-<!-- Date: 25/03/2022 -->
-<!-- Title: Parrallax Website  -->
+/*
+Name: Kyan Keise
+Date: 24/04/2022
+Title: Ferrari Parallax Website
+*/
 
 /* A <div> section in a document that is styled with CSS: */
 
@@ -12,89 +14,90 @@
 
 /* The <a> tag defines a hyperlink, which is used to link from one page to another.*/
 
-
-
-
-body, html{
-    height: 100%;
-    margin: 0;
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    line-height: 1.8em;
-    color: #666;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
 }
 
-.pimg1, .pimg2, .pimg3 {
-    position: relative;
-    opacity: 0.70;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.pimg1,
+.pimg2,
+.pimg3 {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
-/* 
+  /* 
   fixed = parallax
   scroll = normal
  */
 
-
-    background-attachment: fixed;
+  background-attachment: fixed;
 }
 
-.pimg1{
-    background-image: url('../images/image1.jpg');
-    min-height: 100%;
+.pimg1 {
+  background-image: url("../images/image1.jpg");
+  min-height: 100%;
 }
-.pimg2{
-    background-image: url('../images/image2.jpg');
-    min-height: 400px;
+.pimg2 {
+  background-image: url("../images/image2.jpg");
+  min-height: 400px;
 }
-.pimg3{
-    background-image: url('../images/image3.jpg');
-    min-height: 400px;
-}
-
-.section{
-    text-align: center;
-    padding: 50px 90px;
+.pimg3 {
+  background-image: url("../images/image3.jpg");
+  min-height: 400px;
 }
 
-.section-light{
-    background-color: #f4f4f4;
-    color: #666;
-}
-.section-dark{
-    background-color: #282e34;
-    color: #ddd;
+.section {
+  text-align: center;
+  padding: 50px 90px;
 }
 
-.ptext{
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: black;
-    font-size: 27px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
 }
 
-.ptext .border{
-    background-color: #111;
-    color: #fff ;
-    padding: 20px;
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
 }
 
-.ptext .border.trans{
-    background-color: transparent;
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
 }
 
-@media(max-width: 568px) {
-    .pimg1, .pimg2, .pimg3{
-        background-attachment: scroll;
-    }
+.ptext .border.trans {
+  background-color: transparent;
+}
 
-    .ptext{
-        font-size: 16px;
-    }
+@media (max-width: 568px) {
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    background-attachment: scroll;
+  }
+
+  .ptext {
+    font-size: 16px;
+  }
 }
