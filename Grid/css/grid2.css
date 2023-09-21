@@ -1,7 +1,7 @@
-<!-- Author: Kyan Keise -->
-<!-- Date: 10/04/2022 -->
-<!-- Video title: Grid CSS Introduction -->
-
+/*Author: Kyan Keise 
+ Date: 
+Video title: 25/04/2022
+*/
 
 /* A <div> section in a document that is styled with CSS: */
 
@@ -13,40 +13,38 @@
 
 /* The <a> tag defines a hyperlink, which is used to link from one page to another.*/
 
-/* * - CSS Univeral selector can be used to select all types of elements in a HTML page */
+/* * - CSS Universal selector can be used to select all types of elements in a HTML page */
 
 /* pixels/ px - define unit of absolute length */
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  height: 100vh;
 
-/* display - defines the element as a grid container and establishes a new grid formatting context for its containers */
+  /* display - defines the element as a grid container and establishes a new grid formatting context for its containers */
 
-    display: grid;
+  display: grid;
 
-/* inline-grid - other option - generates an inline-level grid */
+  /* inline-grid - other option - generates an inline-level grid */
 
-/* grid-template - specifies named grid areas */
+  /* grid-template - specifies named grid areas */
 
-    grid-template-areas: 
-    'header header header'
-    'nav content sidebar'
-    'nav footer footer'
-    ;
-    
+  grid-template-areas:
+    "header header header"
+    "nav content sidebar"
+    "nav footer footer";
 
-/* Sets the width/ length of each areas column/ row  */
+  /* Sets the width/ length of each areas column/ row  */
 
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 80px 1fr 70px;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 80px 1fr 70px;
 }
 
 /* Properties for each named grid areas */
@@ -56,34 +54,30 @@ footer,
 main,
 aside,
 nav {
-    background-color: steelblue;
-    color: #fff;
-    padding: 20px;
-    border: skyblue 1px solid;
+  background-color: steelblue;
+  color: #fff;
+  padding: 20px;
+  border: skyblue 1px solid;
 }
 
- /* References the grid areas */
+/* References the grid areas */
 
 header {
-
-   
-
-    grid-area: header;
+  grid-area: header;
 }
 
 nav {
-    grid-area: nav;
-
+  grid-area: nav;
 }
 
-main{
-    grid-area: content;
+main {
+  grid-area: content;
 }
 
-aside{
-    grid-area: sidebar;
+aside {
+  grid-area: sidebar;
 }
 
-footer{
-    grid-area: footer;
+footer {
+  grid-area: footer;
 }
