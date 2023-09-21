@@ -1,7 +1,6 @@
-
-/* Author: Kyan Keise */
-/* Date: 03/05/22 */
-/* Title: Landing page with smooth scroll  */
+/* Author: Kyan Keise 
+Date: 03/05/22
+Title: Landing page with smooth scroll */
 
 /* A <div> section in a document that is styled with CSS: */
 
@@ -17,105 +16,98 @@
 
 /* Font style import */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 * {
-
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #333;
-    color: #fff;
-    line-height: 1.6;
-    height: 100vh;
-    /* overflow: hidden; - not compatible with all browsers */ 
+  font-family: "Poppins", sans-serif;
+  background: #333;
+  color: #fff;
+  line-height: 1.6;
+  height: 100vh;
+  /* overflow: hidden; - not compatible with all browsers */
 }
 
-
 .container {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    /* CSS Smooth Scroll */
+  /* CSS Smooth Scroll */
 
-    /* overflow-y: scroll;
+  /* overflow-y: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory; - not compatible with all browsers */
 }
 
 .navbar {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    width: 100%;
-    height: 60px;
-    background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .navbar ul {
-    display: flex;
-    list-style: none;
-    width: 100%;
-    justify-content: center;
-
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
 }
 
 .navbar ul li {
-    margin: 0 1rem;
-    padding: 1rem;
+  margin: 0 1rem;
+  padding: 1rem;
 }
 
 .navbar ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #f4f4f4;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
 }
 
 .navbar ul li a:hover {
-    color: skyblue;
+  color: skyblue;
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    height: 100vh;
-    scroll-snap-align: center;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
 }
 
 section h1 {
-    font-size: 4rem;
-
-
+  font-size: 4rem;
 }
 
 section p {
-font-size: 1.5rem;
+  font-size: 1.5rem;
 }
-
 
 /* Section Images */
 section#home {
-    background: url('https://source.unsplash.com/bZZp1PmHI0E/1600x900') no-repeat center center/cover;;
-  }
-  
-  section#about {
-    background: url(../images/image1.jpg) no-repeat center center/cover;;
-  }
-  
-  section#service {
-    background: url(../images/image2.jpg) no-repeat center center/cover;;
-  }
-  
-  section#contact {
-    background: url(../images/image3.jpg) no-repeat center center/cover;;
-  }
-  
+  background: url("https://source.unsplash.com/bZZp1PmHI0E/1600x900") no-repeat
+    center center/cover;
+}
+
+section#about {
+  background: url(../images/image1.jpg) no-repeat center center/cover;
+}
+
+section#service {
+  background: url(../images/image2.jpg) no-repeat center center/cover;
+}
+
+section#contact {
+  background: url(../images/image3.jpg) no-repeat center center/cover;
+}
