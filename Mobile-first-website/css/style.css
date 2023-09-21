@@ -1,7 +1,6 @@
-
-*/ Author: Kyan Keise */
-*/ Date: 25/03/2022 */
-*/ Title: Mobile First Website  */
+/* Author: Kyan Keise  */
+/* Date: 29/04/2022 */
+/* Title: Mobile First Website */
 
 /* A <div> section in a document that is styled with CSS: */
 
@@ -17,152 +16,141 @@
 
 /* Font style import */
 
-/* rem - helps make a webpage more responsiv rathe then opting for px. */
+/* rem - helps make a webpage more responsive rathe then opting for px. */
 
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-family: 'Roboto Condensed', sans-serif;
-    margin: 0;
-    background: #eee;
-    height: auto;
-  
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  background: #eee;
+  height: auto;
 }
 
-h1{
-    font-weight: 400;
-    font-size: 2.5rem; 
-    text-transform: uppercase;
-    margin: 0;
-
+h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 /* This will style every h2 div tag */
 h2 {
-    font-weight: 400;
-    font-size: 1.2rem;
-    text-transform: capitalize;
-    margin: 0;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin: 0;
 }
 
-/* This helps resize all images with an img tag */ 
+/* This helps resize all images with an img tag */
 
-img{
-    display: block;
-    width: 100%;
+img {
+  display: block;
+  width: 100%;
 }
 
-main{
-    max-width: 900px;
-    margin: auto;
-    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+main {
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
     -30px 0px 40px rgba(0, 0, 0, 0.4);
 }
 
-#landing{
-    background: #fff;
+#landing {
+  background: #fff;
 }
 
-#landing-text{
-    display: flex;
-    flex: 0 1 40vw;
-    height: 50vh;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-right: 1rem;
-    padding-left: 1rem;
+#landing-text {
+  display: flex;
+  flex: 0 1 40vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 #landing-text h2 {
-    color: #888;
+  color: #888;
 }
 
-#landing-image{
-    background: url('../images/main.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 50vh;
-    flex: 0 1 60vw;
-    margin: 0;
-
+#landing-image {
+  background: url("../images/main.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  flex: 0 1 60vw;
+  margin: 0;
 }
 
 .btn {
-    padding: 0.5rem 2rem;
-    border: 1px #ccc solid;
-    display: inline-block;
-    margin: 2rem 0 0;
-    border-radius: 50px;
-    text-decoration: none;
-    color: #333;
-    transition: background 500ms ease;
-    
+  padding: 0.5rem 2rem;
+  border: 1px #ccc solid;
+  display: inline-block;
+  margin: 2rem 0 0;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #333;
+  transition: background 500ms ease;
 }
 
 .btn:hover {
-    background: #f4f4f4;
+  background: #f4f4f4;
 }
 
 #header {
-    padding: 1.5rem;
-    text-align: center;
-    background: #333;
-    color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+  background: #333;
+  color: #fff;
 }
 
 #header h2 {
-
-    border-left: dotted 1px #fff;
-    border-right: dotted 1px #fff;
-    display: inline-block;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
-.caption{
-    padding: 0.8rem;
-    text-align: center;
+.caption {
+  padding: 0.8rem;
+  text-align: center;
 }
 
-footer{
-    text-align: center;
-    padding: 2rem 1rem;
-    margin: auto;
-    color: #333;
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  color: #333;
 }
 
 footer h3 {
-    font-size: 3rem;
-    margin-bottom: 0;
-    
-    
+  font-size: 3rem;
+  margin-bottom: 0;
 }
 
 /* Screen sizes 500px and up */
 
-@media(min-width: 500px){
-    #landing{
-        display: flex;
-        height: 100%;
-    }
-
-
+@media (min-width: 500px) {
+  #landing {
+    display: flex;
+    height: 100%;
+  }
 }
 
 /* Screen sizes 700px and up */
 
-@media(min-width: 700px) {
-    .btn{
-        padding: 1rem 3rem;
-    }
+@media (min-width: 700px) {
+  .btn {
+    padding: 1rem 3rem;
+  }
 }
